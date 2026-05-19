@@ -31,8 +31,14 @@ label {
   margin-top: 10px;
 }
 
-input:user-invalid {
-  border: 1px solid red;
+input:user-invalid,
+select:user-invalid {
+  border: 2px solid red;
+}
+
+input:user-valid,
+select:user-valid {
+  border: 2px solid green;
 }
 .error {
   display: inline-block;
