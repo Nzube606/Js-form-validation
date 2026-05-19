@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="content">
+      <form novalidate>
+        <label for="email"
+          >Enter a valid email(Must end with gmail.com):
+          <input type="email" id="email" minlength="8" required />
+          <span class="email"></span>
+        </label>
+        <label for="country"
+          >Choose your country:
+          <select name="country" id="country" required>
+            <option value="" selected disabled></option>
+            <option value="us">USA</option>
+            <option value="mexico">Mexico</option>
+            <option value="peru">Peru</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="india">India</option>
+            <option value="china">China</option>
+          </select>
+          <span class="country"></span>
+        </label>
+        <label for="postal-code"
+          >Enter your postal code:
+
+          <input type="text" id="postal-code" required inputmode="numeric" />
+          <span class="postal-code"></span>
+        </label>
+        <label for="password"
+          >Enter your password:
+          <input
+            type="password"
+            id="password"
+            pattern="^(?=.*[A-Z])(?=.*\d).{8,}$"
+            required
+          />
+          <span class="password"></span>
+        </label>
+        <label for="confirm-password"
+          >Confirm your password:
+
+          <input type="password" id="confirm-password" />
+          <span class="confirm-password"></span>
+        </label>
+        <div>
+          <button id="cancelButton">Cancel</button>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

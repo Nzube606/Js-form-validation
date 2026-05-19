@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content {
+  width: 300px;
+}
+form {
+  padding: 10px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  width: 90%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  margin-top: 3px;
+}
+label {
+  margin-top: 10px;
+}
+
+input:user-invalid {
+  border: 1px solid red;
+}
+.error {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  width: 80%;
+  padding: 0.3rem;
+  border-radius: 0px 0px 5px 5px;
+  margin-top: 0.1rem;
+}
+
+form > div {
+  margin-top: 5px;
+}
+
+button {
+  padding: 5px;
+  font-size: 0.9rem;
+  color: white;
+  background-color: burlywood;
+  border: 1px solid black;
+  border-radius: 5px;
+}
